@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>아임웹 iframe 삽입 테스트</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    .iframe-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      background: white;
+      padding: 1rem;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>💡 아임웹 환경 시뮬레이션 (iframe 테스트)</h2>
+  <div class="iframe-container">
+    <iframe
+      id="test-iframe"
+      src="http://localhost:5173"
+      width="100%"
+      height="1000px"
+      frameborder="0"
+      scrolling="no"
+      allowfullscreen
+      title="성격 분석 테스트"
+      loading="lazy">
+    </iframe>
+  </div>
+</body>
+</html>
